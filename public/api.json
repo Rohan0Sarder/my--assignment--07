@@ -1,0 +1,59 @@
+
+     [
+      {
+        "id": 1,
+        "title": "Rolex Submariner",
+        "description": "A classic vintage watch from the 1970s. Fully functional with some minor scratches.",
+        "currentBidPrice": 120.00,
+        "timeLeft": "12:34:56",
+        "bidsCount": 5,
+        "image": "https://i.ibb.co.com/z3tByLh/Bid4-min.png"
+      },
+      {
+        "id": 2,
+        "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+        "description": "This is a new note book.",
+        "currentBidPrice": 450.00,
+        "timeLeft": "10:25:40",
+        "bidsCount": 10,
+        "image": "https://i.ibb.co.com/TM9bJsL5/Bid6-min.png"
+      },
+      {
+        "id": 3,
+        "title": "1965 Gibson SG Standard Electric Guitar",
+        "description": "A singer friend gift to me a gitter",
+        "currentBidPrice": 200.00,
+        "timeLeft": "04:11:22",
+        "bidsCount": 3,
+        "image": "https://i.ibb.co.com/hxKtW5mY/Bid2-min.png"
+      },
+      {
+        "id": 4,
+        "title": "CMid-Century Modern Eames Lounge Chair",
+        "description": "A old man sit on the chair.",
+        "currentBidPrice": 350.00,
+        "timeLeft": "15:00:05",
+        "bidsCount": 7,
+        "image": "https://i.ibb.co.com/vy8VRnS/Bid5-min.png"
+      },
+      {
+        "id": 5,
+        "title": "Banksy Original Screen Print",
+        "description": "This is a beautiful night flower. I want to it .",
+        "currentBidPrice": 550.00,
+        "timeLeft": "02:30:10",
+        "bidsCount": 8,
+        "image": "https://i.ibb.co.com/FLn4K5hS/Bid7-min.png"
+      },
+      {
+        "id": 6,
+        "title": "Original Apple Macintosh 128K (1984)",
+        "description": "High-performance gaming laptop with a 15-inch screen, 16GB RAM, and an RTX 3060 graphics card.",
+        "currentBidPrice": 1200.00,
+        "timeLeft": "20:45:30",
+        "bidsCount": 4,
+        "image": "https://i.ibb.co.com/bgdTLYrh/Bid3-min.png"
+      }
+    ]
+  
+  
