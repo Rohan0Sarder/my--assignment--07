@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaHeart } from "react-icons/fa";
+import Swal from 'sweetalert2';
 
 const Table = ({ tables, handleHeart }) => {
   const [clicked, setClicked] = useState([]); 
@@ -12,6 +13,21 @@ const Table = ({ tables, handleHeart }) => {
 
     setClicked(updatedClicked); 
     handleHeart(table); 
+
+ if (!isClicked) {
+      Swal.fire({
+        title: 'Added to Favorites!',
+        text: `${table.title} has been added.`,
+        icon: 'success',
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+      });
+    }
+
+
   };
 
   return (
@@ -50,10 +66,14 @@ const Table = ({ tables, handleHeart }) => {
                 <td>{table.timeLeft}</td>
                 <td>
                   <button onClick={() => handleClick(table)}>
-                    <FaHeart
-                      size={'25px'}
-                      color={clicked.includes(table.id) ? 'red' : 'gray'}
-                    />
+                      <FaHeart
+                        size={'25px'}
+                        color={clicked.includes(table.id) ? 'red' : 'gray'}
+                        className={`transition-all duration-200 ${
+                          clicked.includes(table.id) ? 'cursor-not-allowed' : 'cursor-pointer'
+                        }`}
+                      />
+
                   </button>
                 </td>
               </tr>

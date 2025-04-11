@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navber from './Navber'
 import Footer from './Footer'
-
+import { FaHeart } from "react-icons/fa";
 import Tables from './Table/Tables'
 import { RxCross2 } from "react-icons/rx";
 
@@ -37,7 +37,12 @@ console.log(heartbid)
 
         {/* right-side */}
         <div className='right-side bg-amber-100 w-[30%] p-3 rounded-xl items-center text-center'>
-        <h1 className='text-2xl py-3'>Favorite Items</h1>
+           <div className='flex items-center justify-center gap-2 text-2xl font-semibold py-3'>
+              <FaHeart className='text-red-500' />
+              <span>Favorite Items</span>
+            </div>
+
+
         <hr className='my-1 border-dashed' />
         {
   Array.isArray(heartbid) && heartbid.length > 0 ? (
