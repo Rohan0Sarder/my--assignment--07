@@ -40,8 +40,9 @@ console.log(heartbid)
            <div className='flex items-center justify-center gap-2 text-2xl font-semibold py-3'>
               <FaHeart className='text-red-500' />
               <span>Favorite Items</span>
+              
             </div>
-
+            <p className='text-gray-500'> Add Product item : {heartbid.length}</p>
 
         <hr className='my-1 border-dashed' />
         {
@@ -52,6 +53,7 @@ console.log(heartbid)
         className="flex justify-between items-center bg-blue-100 mt-2 px-4 py-2 rounded shadow"
       >
         
+        <div>
         <div className="flex items-center gap-3">
           <img
             src={heart.image}
@@ -59,7 +61,17 @@ console.log(heartbid)
             className="w-12 h-12 object-cover rounded"
           />
           <span className="font-medium">{heart.title}</span>
+         
         </div>
+        <div className='flex gap-3 p-3 items-center justify-around'>
+          <p className='font-bold text-fuchsia-400'>${heart.currentBidPrice}</p>
+          <p className='font-medium text-purple-600'>Bids : {heart.bidsCount}</p>
+          </div>
+        </div>
+
+
+
+       
 
        
         <button
